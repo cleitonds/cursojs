@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {background-color: rgb(105, 105, 173);
+        color: white;   /*Isso é um comentário em CSS */
+        font: normal 20pt Arial;}
+
+        h1 {color: orange;}
+
+    </style>
+
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!--Isso é um comentário em HTML-->
+    <p>Já me livrei da maldição!!! </p>
+    <script>
+       var n1 = Number(window.prompt('Digite um número: '))
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var s = n1 + n2
+       // window.alert('A soma dos valores é ' + s) //concatenou (formula antiga)
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+       // observação: o JS entende q o + serve tanto para adição como para concatenação 
+       // Desta forma, para que ele entenda que tenha que fazer adição precisa ter um number + number, assim string  + string vai concatenar
+       // O Window.prompt leva o valor como string, assim, precisa fazer a conversão de tipo usando:
+       // Number.parseInt(n) - numero inteiro // Number.parseFloat(n) - numero flutuante
+       //Usando um ou outro fica limitado o código, teria q usar em caso específico, usando apenas o Number resolve este problema atual
+       // Usando somente o Numer eu permito que o JS decida de acordo com o valor q recebeu
+       // caso queria fazer o inverso number p/ string usa: string(valor nesse caso n) ou n.tostring()
+    </script>
+</body>
+</html>
